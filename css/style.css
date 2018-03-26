@@ -1,0 +1,225 @@
+
+
+.section-title{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+/* LIST STYLE
+-------------------------------------------------- */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style : none;
+}
+
+img{
+  width: 100%;
+  margin: 5px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+ /* --- Navigation --- */
+
+ .navbar{
+   border-bottom: 2px #52b3d9 solid;
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+
+
+/* ---- Hero ---- */
+header{
+    background: url('../images/background3.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    min-height: 600px;
+    height:100vh;
+    position: relative;
+  }
+header .dark-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 600px;
+  height:100%;
+}
+header .hero-inner{
+  padding-top: 15%;
+  text-align: center;
+}
+.intro{
+  color: #fff;
+  padding: 0 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.intro h1{
+	font-size: 60px;
+	line-height: 80px;
+	margin-bottom: 16px;
+	color: #52b3d9;
+}
+.intro h1 span{
+	color: #68c3a3;
+}
+.intro p{
+	color: #f7f7f7;
+	margin-bottom: 25px;
+}
+hr {
+    width: 40%;
+   margin-bottom: 25px ;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .3);
+}
+
+/* ---- SOCIAL ICON ---- */
+.social{
+  display: inline;
+}
+.social li a i{
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 7px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 100px;
+}
+.social li a i:hover { color: #52b3d9; }
+
+/* ---- MOUSE ---- */
+.mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  height: 45px;
+  width: 30px;
+  margin-left: -17px;
+  display: block;
+  z-index: 10;
+  }
+  
+.mouse-icon .scroll {
+  -webkit-animation-name: scrolling;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running; 
+  }
+
+  .mouse-icon .scroll {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 4px;
+  height: 8px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+@-webkit-keyframes scrolling {
+  0%   { top:2px;  opacity: 0;}
+  30%  { top:8px; opacity: 1;}
+  100% { top:16px; opacity: 0;}
+}
+
+ /* --- About --- */
+.img-about{
+  position: relative;
+}
+.img-about img:hover {
+    transform:none;
+}
+
+.biography{
+  border-radius: 10px;
+  border:1px solid #EEEEEE;
+  text-align: left;
+}
+.biography ul{
+  padding: 10px 0;
+}
+.biography ul li{
+  padding: 5px 5px;
+  margin: 0;
+  font-size: 16px;
+  border-bottom:1px solid #EEEEEE;
+  display: block;
+}
+.biography ul li:last-child{
+  border-bottom: 0;
+  padding-bottom: 0px;
+}
+
+/* --- Skills --- */
+.skill-title {
+  width: 25%;
+  display: inline;
+  margin-bottom: 10px;
+}
+.skill-title h3{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -6px;
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+.pull-right{
+  float: right;
+  padding-right: 10px;
+}
+.skill-progress .progress {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 4px;
+  margin: 8px 0 20px 0;
+}
+.skill-progress .progress-bar {
+  background: #1f1f1f;
+  box-shadow: none;
+}
+
+/* --- Work --- */
+.portfolio_filter {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.portfolio_filter button {
+  outline: none;
+  border:  1px solid rgba(150, 150, 150, .3);
+  background: transparent;
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 20px;
+  font-weight: 400;
+  color: #737f8a;
+  cursor: pointer;
+}
+.portfolio_filter button.mixitup-control-active {
+  border: 1px solid #68c3a3;;
+  color: #68c3a3;
+}
+.portfolio_mix{
+  padding: 5px 0 5px 0;
+}
+
+/* --- Footer --- */
+#footer{
+  opacity: 0.9;
+}
+#footer h3, p{
+color: #fff;
+}
