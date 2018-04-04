@@ -20,7 +20,7 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
             </button>
-              <a href="index.html" class="navbar-brand">LoopLAB</a>
+              <a href="index.html" class="navbar-brand">JLWebdesign</a>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -153,9 +153,9 @@
       <div class="col-md-12">
         <div class="section-title text-center">
           <h2> Portfolio </h2>
-        </div>
-      </div>
-    </div>
+        </div> <!-- Section title End -->
+      </div> <!-- Col End -->
+    </div><!-- Row End -->
     <div class="row">
       <div class="col-md-12">
         <div class="portfolio_filter">
@@ -179,32 +179,96 @@
       <div class="col-md-3 mix category-c">
         <img src="images/background.jpg" alt="">
       </div>
-    </div>
-  </div>
-</section>
+    </div> <!-- Row End -->
+  </div> <!-- Container End -->
+</section> <!-- Section Portfolio End -->
 
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h2> Contact </h2>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+      <!-- Form Started -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="panel panel-danger">
+            <div class="panel-body">
+              <form id="reused_form">
+                  <div class="form-group">
+                      <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                      <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                  </div>
+                  <div class="form-group">
+                      <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                      <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                  </div>
+                  <div class="form-group">
+                      <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                      <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <button class="btn btn-raised btn-block btn-danger">Send</button>
+                  </div>
+              </form>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                  <h4>Error</h4>
+                   Sorry there was an error sending your form.  
+                </div>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                  <h2>Success! Your Message was Sent Successfully.</h2>
+                </div>
+            </div>
+        </div>
+      </div><!-- Form Ended -->
+      <div class="col-md-6 text-center pt-5">
+        <div class="contact">
+          <i class="fas fa-mobile-alt"></i>
+          <h5>Phone</h5>
+          <p>512-421-3940</p>
+        
+     
+          <i class="far fa-envelope"></i>
+          <h5>Email</h5>
+          <p>512-421-3940</p>
+      
+      
+        <i class="fas fa-map-marker-alt"></i>
+        <h5>Address</h5>
+        <p>512-421-3940</p>
+        </div>
+      </div>
+       
+    </div> <!-- Row End-->
+  </div> <!-- Container End-->
+</section>
 <section id="footer" class="bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col text-center text-white">
+      <div class="col text-center">
         <div class="py-4">
-          <h3>Logo</h3>
-          <p>Copyright &copy; 2018. All right reserved. Designed by Jan Lala</p>
+          <div class="footer-text">
+            <h3>Logo</h3>
+            <p>Copyright &copy; 2018. All right reserved. Designed by Jan Lala</p>
+          </div>  
         </div>
       </div>
     </div>
   </div>
 </section>
-
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mixitup.min.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
-  
-
-<!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
   <script type="text/javascript">
     var mixer = mixitup('.portfolio_mix');
   </script>
@@ -213,7 +277,5 @@
     var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
     var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
   </script>
- 
-
   </body>
 </html>
